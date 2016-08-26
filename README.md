@@ -1,6 +1,8 @@
 # foseedsp
 Contains iirnotch, ca2tf, firlp2lp matlab functions coded in scilab
 
+*
+
 ca2tf : 
 
   calculates average of two all pass filter (coupled all pass filter)
@@ -17,8 +19,9 @@ ca2tf :
   
   d1 = 1:10; d2 = [1 2 3 4 5];
   [b,a]= ca2tf[d1,d2];
-  
-  
+
+*
+
 firlp2lp:
 
   Convert Fir TypeI low pass filter to fir type I lowpass filter of inverse bandwidth
@@ -38,7 +41,9 @@ firlp2lp:
   [hzm,fr]=frmag(c,1,256);plot(2*fr,hzm);
   
   //Note: 2*fr since it ranges values from 0 to 1/2 hence extend twice.
-  
+
+*
+
 iirnotch:
 
   Create a digital notching filter which can filter out specific frequency
